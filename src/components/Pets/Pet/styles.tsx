@@ -4,8 +4,8 @@ export const PetContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  padding: 0 1rem;
+  justify-content: flex-start;
+  padding: 4rem 1rem;
   padding-bottom: 4rem;
 
   background: ${({ isCat }: AnimalProps) => isCat && "rgb(56,8,145)"};
@@ -102,5 +102,5 @@ const animateCorectIcon = keyframes`
 export const CorrectSvg = styled.img`
   height: 80px;
   margin: 1rem 0;
-  animation: ${animateCorectIcon} .5s none 0s ease-in;
+  animation: ${animateCorectIcon} 0.5s none 0s ease-in;
 `;

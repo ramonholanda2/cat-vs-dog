@@ -40,9 +40,6 @@ export const ImageVersus = styled.img`
   
   @media screen and (max-width: 800px) {
     height: 5rem;
-  }
-
-  @media screen and (max-width: 500px) {
-    bottom: 50%;
+    bottom: calc(100vh - 200px);
   }
 `;
