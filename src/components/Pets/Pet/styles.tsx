@@ -4,9 +4,8 @@ export const PetContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
-  padding: 4rem 1rem;
-  padding-bottom: 4rem;
+  justify-content: center;
+  padding:  0 1rem;
 
   background: ${({ isCat }: AnimalProps) => isCat && "rgb(56,8,145)"};
   background: ${({ isDog }) => isDog && "rgb(0,249,255)"};
@@ -20,6 +19,12 @@ export const PetContainer = styled.div`
     "linear-gradient(30deg, rgba(56,8,145,1) 0%, rgba(0,249,255) 70%)"};
 
   color: ${({ isCat }) => isCat && "white"};
+
+  @media screen and (min-height: 600px) {
+    justify-content: flex-start;
+    padding-top: 9rem;
+
+  }
 `;
 
 export const PetImage = styled.img`
